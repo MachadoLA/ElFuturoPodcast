@@ -101,19 +101,35 @@ a{text-decoration: none;
     
 }
 
-@media (max-width: 768px) {
-    #navbarNav .navbar-toggler {
-        display: flex;
-        justify-content: end;
-    }
-    #nosotros .secNosotros {
-        flex-direction: column;
-    }
-    #episodios .grid-episodios {
-        flex-direction: column;
-        padding: auto;
-    }
-}
+
+    @media (max-width: 767px) {
+        .grid-episodios {
+          display: flex;
+          flex-direction: column;
+          align-items: center; /* Alinea los elementos al centro */
+        }
+      
+        .grid-item {
+          width: 100%; /* Opcional: Asegura que los elementos ocupen el ancho completo */
+          margin-bottom: 20px; /* Espacio entre elementos */
+        }
+        .secNosotros .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        
+          .secNosotros .col {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        
+          .secNosotros .card {
+            width: 100%;
+          }
+        }
+      
+
 
 
 
